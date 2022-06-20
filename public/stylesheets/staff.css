@@ -1,0 +1,16 @@
+.staff-logo {
+    width: 50px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image-404 {
+    display: block;
+    margin: 80px auto 0;
+}
+

@@ -1,0 +1,132 @@
+:root {
+    --bs-primary-rgb: 4,12,116;
+}
+
+.main-logo {
+    width: 60px;
+}
+
+.main-logo-text {
+    text-transform: uppercase;
+}
+
+.content {
+    margin-top: 110px;
+}
+main.main {
+    margin-left: 250px;
+    padding: 20px 30px;
+    max-height: 500px;
+    margin-top: 110px;
+}
+
+.accordion button {
+    background: #eeeeee;
+    border: none;
+}
+
+.sidebar {
+    background: #eee;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+}
+
+.accordion .accordion-button {
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #777;
+}
+
+.accordion .accordion-button:focus {
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #212529;
+    background-color: #eeeeee;
+}
+
+.accordion-button::after {
+    background-image: url(/public/images/public/down-arrow.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(/public/images/public/down-arrow-focus.svg);
+}
+
+.accordion .accordion-body ul {
+    list-style: none;
+    text-transform: uppercase;
+    color: #777;
+    background-color: #fefefe;
+}
+
+.accordion .accordion-body ul li a {
+    color: #777;
+    background-color: #fefefe;
+    text-decoration: none;
+}
+
+.accordion .accordion-body ul li a.active {
+    color: blue;
+    text-decoration: none;
+    background-color: aliceblue;
+}
+
+
+.accordion ul a {
+    display: block;
+    padding: 9px 0;
+}
+
+.accordion .accordion-button i {
+    margin-right: 10px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(/public/images/public/menu.svg);
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid #eeeeee;
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .collapse.navbar-collapse  {
+        display: none;
+    }
+
+    .navbar-collapse.collapse.show {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    main.main {
+        margin-left: 0;
+    }
+}
